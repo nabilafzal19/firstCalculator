@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>caculator</title>
+    <!-- link to css file -->
+    <link rel="stylesheet" href="caculator..css">
+</head>
+<body>
+<div class="wrapper">
+    <div class="caculator">
+        <div class="caculator-header">
+         <div >
+             <h1 id="total-content">0</h1>
+             <p id="content"></p>
+         </div>
+        </div>
+        <div class="caculator-footer">
+           <div class="special-btn" onClick="calculate('C')"><span >C</span></div>
+           <div class="special-btn" onClick="calculate('AC')"><span >AC</span></div>
+           <div class="special-btn" onClick="calculate('%')"><span >%</span></div>
+           <div class="special-btn" onClick="calculate('/')"><span >/</span></div>
+           <div onClick="calculate('7')"><span>7</span></div>
+           <div onClick="calculate('8')"><span>8</span></div>
+           <div onClick="calculate('9')"><span>9</span></div>
+           <div class="special-btn" onClick="calculate('*')"><span >x</span></div>
+           <div onClick="calculate('4')"><span>4</span></div>
+           <div onClick="calculate('5')"><span>5</span></div>
+           <div onClick="calculate('6')"><span>6</span></div>
+           <div class="special-btn" onClick="calculate('-')"><span >-</span></div>
+           <div onClick="calculate('1')"><span>1</span></div>
+           <div onClick="calculate('2')"><span>2</span></div>
+           <div onClick="calculate('3')"><span>3</span></div>
+           <div class="special-btn" onClick="calculate('+')"><span >+</span></div>
+           <div onClick="calculate('0')"><span>0</span></div>
+           <div onClick="calculate('00')"><span>00</span></div>
+           <div onClick="calculate('.')"><span>.</span></div>
+           <div class="dark-special-btn" onClick="calculate('=')"><span>=</span></div>
+        </div>
+
+    </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.3.2/math.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.3.2/math.js" integrity="sha512-Imer9iTeuCPbyZUYNTKsBWsAk3m7n1vOgPsAmw4OlkGSS9qK3/WlJZg7wC/9kL7nUUOyb06AYS8DyYQV7ELEbg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+<script src="caculator.js"></script>
+</body>
+</html>
